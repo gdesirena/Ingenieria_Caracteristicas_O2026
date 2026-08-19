@@ -1,0 +1,48 @@
+name: ic_curso_2026
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python
+  - python=3.10.12
+
+  # Jupyter
+  - jupyterlab>=4.0
+  - ipykernel>=6.29
+  - ipywidgets>=8.1
+
+  # Manejo de datos
+  - numpy>=1.26
+  - pandas>=2.1
+  - scipy>=1.11
+
+  # Machine Learning / Feature Engineering
+  - scikit-learn>=1.4
+  - imbalanced-learn>=0.11
+
+  # Visualización
+  - matplotlib>=3.8
+  - seaborn>=0.13
+  - plotly>=5.18
+
+  # Utilidades
+  - tqdm>=4.66
+  - requests>=2.31
+  - python-dotenv>=1.0
+
+  # Archivos / Extracción de datos
+  - openpyxl>=3.1
+  - lxml>=5.1
+  - beautifulsoup4>=4.12
+
+  # Via pip (no disponibles en conda-forge)
+  - pip
+  - pip:
+    - feature-engine>=1.6
+    - category-encoders>=2.6
+    - featuretools>=1.28
+    - ydata-profiling>=4.6
+    - missingno>=0.5
+    - wordcloud>=1.9
